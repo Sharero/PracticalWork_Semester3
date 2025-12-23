@@ -1,0 +1,34 @@
+Checks: >
+  *,
+  -misc-non-private-member-variables-in-classes,
+  -llvmlibc-inline-function-decl,
+  -llvmlibc-callee-namespace,
+  -llvmlibc-implementation-in-namespace,
+  -modernize-use-trailing-return-type,
+  -llvmlibc-restrict-system-libc-headers,
+  -altera-struct-pack-align,
+  -altera-id-dependent-backward-branch,
+  -fuchsia-default-arguments-calls,
+  -readability-identifier-length,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -bugprone-easily-swappable-parameters,
+  readability-identifier-naming
+CheckOptions:
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.FunctionCase
+    value: camelBack
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.ParameterCase
+    value: lower_case
+  - key: readability-identifier-naming.EnumCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_case
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+HeaderFilterRegex: '.*\.h'

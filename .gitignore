@@ -1,0 +1,48 @@
+# CMake
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+*.cmake
+
+# Object files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Logs and temporary files
+.cache/
+*.log
+*.tmp
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Clang and analysis
+.clang-format.cache
+.clangd
+
+# Third-party libraries
+/third_party/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Local runners
+actions-runner/
+
+# Virtual environments
+env/
+venv/
