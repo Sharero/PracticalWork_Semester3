@@ -1,0 +1,12 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Введение}{3}{Doc-Start}%
+\contentsline {section}{\numberline {1}Теоретическая часть}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Алгоритм разбиения шестигранника}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Визуализация сетки}{6}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Тестирование}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Тестирование на 1 шестиграннике}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Тестирование на 2 шестигранниках}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Тестирование на 4 шестигранниках}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Тестирование на 4 шестигранниках}{12}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Заключение}{16}{section.3}%
+\contentsline {section}{Приложение A. Текст программы}{18}{section.3}%

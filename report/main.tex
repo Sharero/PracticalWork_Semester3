@@ -1,0 +1,30 @@
+\documentclass[a4paper, 14pt]{extarticle}
+
+\usepackage{./styles/document}
+\usepackage{./styles/code}
+\usepackage{./styles/section}
+
+\begin{document}
+	\includepdf[pages=-]{./images/title.pdf}
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	
+	\input{preamble/preamble}
+	\input{sections/theoretical_part}
+	\input{sections/research}
+	\input{sections/conclusion}
+	
+	\begin{thebibliography}{9}
+		
+		\bibitem{MKE}  Метод конечных элементов для решения скалярных и векторных задач : учеб. Пособие / Ю.Г. Соловейчик, М.Э. Рояк, М.Г. Персова -- Новосибирск: Изд-во НГТУ, 2007.-- 896 с. ("Учебники НГТУ").
+		
+		\bibitem{Зенкевич} Зенкевич О., Морган К. Конечные элементы и аппроксимация. -- М.: Мир, 1986.
+		
+		\bibitem{vtk}
+		Schroeder W., Martin K., Lorensen B. The Visualization Toolkit: An Object-Oriented Approach to 3D Graphics. Edition 4.1. July 2018.
+	\end{thebibliography}
+	
+	\appendix
+	\input{appendices/appendix_A}
+\end{document}

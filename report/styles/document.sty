@@ -1,0 +1,78 @@
+% ----------------------------------------БИБЛИОТЕКИ------------------------------------------------
+\usepackage[utf8]{inputenc} 
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{setspace} % для настройки интервалов
+\usepackage{caption}   % для настройки подписей
+\usepackage{float}   % опция [H] для «жёсткого» размещения картинок, таблиц
+\usepackage[a4paper, left=30mm, right=10mm, top=20mm, bottom=20mm]{geometry}  % поля страницы
+\usepackage{tempora}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{indentfirst} % Всегда начинать текст главы с абзаца
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, physics, esvect, amsfonts}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand\@biblabel[1]{#1.} % меняем [1] на 1.
+\makeatother
+
+\onehalfspacing % межстрочный интервал — 1.5
+
+
+\DeclareCaptionFont{figfont}{\fontsize{14}{16}\selectfont}  
+\captionsetup[figure]{%
+	font=figfont,               % шрифт подписи
+	labelfont={figfont},     % шрифт метки «Рисунок N» — полужирный + 14 pt
+	labelsep=space,             % разделитель «Рисунок 1 – текст» = пробел и дефис
+	justification=centering,    % центрируем подпись по ширине рисунка
+	singlelinecheck=true,       % если подпись в одну строку — тоже центрировать
+	belowskip=24pt,             % отступ «после» подписи = 24 pt
+	aboveskip=0pt               % отступ «до» подписи = 0 pt (т. е. сразу после рисунка)
+}
+
+\DeclareCaptionFont{tabfont}{\fontsize{14}{16}\selectfont}  
+\captionsetup[table]{%
+	font=tabfont,               % шрифт подписи
+	labelfont={tabfont},     % метка «Таблица N» — полужирная + 14 pt
+	labelsep=space,             % «Таблица 1 – текст»
+	justification=raggedright,  % выравниваем подпись по левому краю
+	singlelinecheck=false,      % даже в одну строку остаётся слева
+	aboveskip=24pt,             % отступ «до» подписи = 24 pt
+	belowskip=0pt               % отступ «после» подписи = 0 pt
+}
+
+% Абзацный отступ — 1 см
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{0pt} % Без дополнительного отступа между абзацами
+
+
+% Нумерация страниц — снизу по центру
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+
+% Плавающие элементы ближе к месту вызова
+
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+
+% Графика
+
+
+% Подписи к рисункам и таблицам
+
+\captionsetup[table]{name=Таблица, justification=raggedright, singlelinecheck=false}
+\captionsetup[figure]{name=Рисунок}
+
+
+% Списки
+
+\setlist{nosep, leftmargin=1.25cm}

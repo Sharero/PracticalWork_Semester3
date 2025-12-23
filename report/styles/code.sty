@@ -1,0 +1,27 @@
+% ----------------------------------------БИБЛИОТЕКИ---------------------------------------------
+\usepackage[varqu,varl]{inconsolata} % вариант без засечек, близкий к Consolas
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{setspace} % для настройки интервалов
+% ------------------------------------------------------------------------------------------------------
+
+% -----------------------------СТИЛЬ ДЛЯ ТЕКСТА КОДА---------------------------------------------
+\lstset{
+	language=Python,                             % язык программирования
+	basicstyle=\ttfamily\singlespacing\fontsize{10pt}{12pt}\selectfont, % шрифт Inconsolata ~ Consolas, 10 pt
+	keywordstyle=\color{blue},                % цвет ключевых слов
+	commentstyle=\color{gray},                % цвет комментариев
+	stringstyle=\color{teal},                 % цвет строк
+	numbers=none,                             % без номеров строк
+	breaklines=true,                          % перенос длинных строк
+	frame=single,                             % рамка вокруг кода
+	tabsize=1,                                % табуляция = 1 пробел
+	showspaces=false,                         % не показываем пробелы
+	showstringspaces=false,                   % не показываем пробелы внутри строк
+	escapeinside={\%*}{*)},                   % чтобы вставлять LaTeX‑команды
+	aboveskip=0pt,                            % отступ сверху = 0
+	belowskip=0pt,                            % отступ снизу = 0
+	xleftmargin=0pt,                          % выравнивание по левому краю
+	xrightmargin=0pt                          % правого сдвига нет
+}
+% ------------------------------------------------------------------------------------------------------
