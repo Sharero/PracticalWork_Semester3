@@ -3,6 +3,7 @@
 /CMakeFiles/
 /CMakeCache.txt
 *.cmake
+compile_commands.json
 
 # Object files
 *.o
